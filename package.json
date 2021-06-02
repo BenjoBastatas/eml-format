@@ -23,5 +23,9 @@
   },
   "dependencies": {
     "iconv-lite": "^0.5.0"
+  },
+  "peerDependencies": {
+    "react-native-fs": "^2.18.0",
+    "react-native-path": "^0.0.5"
   }
 }
