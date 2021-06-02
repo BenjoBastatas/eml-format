@@ -1,6 +1,6 @@
 var os = require('os');
-var fs = require('fs');
-var path = require('path');
+var fs = require('react-native-fs');
+var path = require('react-native-path');
 var emlformat = require('./lib/eml-format.js');
 
 var config = {

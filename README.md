@@ -28,7 +28,7 @@ npm install -g eml-format
 
 Read EML file
 ```javascript
-var fs = require('fs');
+var fs = require('react-native-fs');
 var emlformat = require('eml-format');
 
 var eml = fs.readFileSync("sample.eml", "utf-8");
@@ -133,7 +133,7 @@ Unpacks EML message and attachments to a directory
 
 ### Read headers only
 ```javascript
-var fs = require('fs');
+var fs = require('react-native-fs');
 var emlformat = require('eml-format');
 
 var eml = fs.readFileSync("sample.eml", "utf-8");
@@ -149,7 +149,7 @@ emlformat.read(eml, { headersOnly: true }, function(error, data) {
 
 The `parse` function parses raw EML content into a JavaScript object for further processing.
 ```javascript
-var fs = require('fs');
+var fs = require('react-native-fs');
 var emlformat = require('eml-format');
 
 var eml = fs.readFileSync("sample.eml", "utf-8");
@@ -175,7 +175,7 @@ emlformat.read(eml, function(error, data) {
 
 Extracts plain text, html content and attachments to a directory
 ```javascript
-var fs = require('fs');
+var fs = require('react-native-fs');
 var emlformat = require('eml-format');
 
 var dir = "unpacked"; //Output directory
@@ -190,7 +190,7 @@ emlformat.unpack(eml, dir, function(error, data) {
 ### Create an EML file
 
 ```javascript
-var fs = require('fs');
+var fs = require('react-native-fs');
 var emlformat = require('eml-format');
 
 var data = {
